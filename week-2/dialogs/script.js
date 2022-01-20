@@ -14,14 +14,14 @@ const alert = document.querySelector(".alert");
 setShowDialog(alertBtn, alert);
 setHideDialog(actionBtnList, alert);
 
-const simpleBtn = document.querySelector('.btn-simple');
-const simpleBtnList = document.querySelectorAll('.btn-action-simple');
-const simple = document.querySelector('.simple');
+const simpleBtn = document.querySelector(".btn-simple");
+const simpleBtnList = document.querySelectorAll(".btn-action-simple");
+const simple = document.querySelector(".simple");
 setShowDialog(simpleBtn, simple);
 setHideDialog(simpleBtnList, simple);
 
-const confirmBtn = document.querySelector('.btn-confirm');
-const confirmBtnList = document.querySelectorAll('.btn-action-confirm');
-const confirm = document.querySelector('.confirm');
+const confirmBtn = document.querySelector(".btn-confirm");
+const confirmBtnList = document.querySelectorAll(".btn-action-confirm");
+const confirm = document.querySelector(".confirm");
 setShowDialog(confirmBtn, confirm);
 setHideDialog(confirmBtnList, confirm);
