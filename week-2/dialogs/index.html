@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css assignment Dialogs</title>
+    <link rel="stylesheet" href="../defaults.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-center">
+        <button class="btn btn-trigger btn-alert">Open Alert Dialog</button>
+        <div class="alert dialog">
+          <h3 class="dialog-header">Dialog header</h3>
+          <p class="dialog-body">Dialog body text</p>
+          <div class="btn-container">
+            <button class="btn btn-plain purple-hover btn-action-alert">
+              ACTION 1
+            </button>
+            <button class="btn btn-plain purple-hover btn-action-alert">
+              ACTION 2
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container-center">
+        <button class="btn btn-trigger btn-simple">Open Simple Dialog</button>
+        <div class="simple dialog">
+          <h3 class="dialog-header">Dialog header</h3>
+          <div class="item-container">
+            <div class="item">
+              <i class="fas fa-user-circle"></i>
+              <button class="btn btn-plain gray-hover btn-action-simple">
+                Item 1
+              </button>
+            </div>
+            <div class="item">
+              <i class="fas fa-user-circle"></i>
+              <button class="btn btn-plain gray-hover btn-action-simple">
+                Item 2
+              </button>
+            </div>
+            <div class="item">
+              <i class="fas fa-user-circle"></i>
+              <button class="btn btn-plain gray-hover btn-action-simple">
+                Item 3
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-center">
+        <button class="btn btn-trigger btn-confirm">
+          Open Confirmation Dialog
+        </button>
+        <div class="confirm dialog">
+          <h3 class="dialog-header">Dialog header</h3>
+          <div class="item-container">
+            <div class="item">
+              <input type="radio" id="item-1" />
+              <label for="item-1">Item 1</label>
+            </div>
+            <div class="item">
+              <input type="radio" id="item-1" />
+              <label for="item-2">Item 2</label>
+            </div>
+            <div class="item">
+              <input type="radio" id="item-1" />
+              <label for="item-3">Item 3</label>
+            </div>
+            <div class="item">
+              <input type="radio" id="item-1" />
+              <label for="item-4">Item 4</label>
+            </div>
+            <div class="item">
+              <input type="radio" id="item-1" />
+              <label for="item-5">Item 5</label>
+            </div>
+            <div class="item">
+              <input type="radio" id="item-1" />
+              <label for="item-6">Item 6</label>
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-plain purple-hover btn-action-confirm">
+              ACTION 1
+            </button>
+            <button class="btn btn-plain purple-hover btn-action-confirm">
+              ACTION 2
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

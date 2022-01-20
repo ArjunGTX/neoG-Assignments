@@ -1,0 +1,70 @@
+.btn-trigger {
+  color: var(--purple-font);
+  font-weight: 600;
+  padding: 10px;
+  border: 2px solid var(--purple-font);
+}
+.btn-trigger:hover {
+  background-color: var(--purple-font);
+  color: var(--light-font);
+  transition: 250ms;
+}
+.dialog {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-bg);
+  box-shadow: var(--card-shadow);
+  padding: 2rem;
+  border-radius: 1rem;
+  min-width: 35rem;
+  min-height: 15rem;
+  transform: scale(0);
+  transition: 250ms;
+}
+.show-dialog {
+  transform: scale(1);
+}
+.dialog-header {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.dialog-body {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gray-font);
+}
+.dialog .btn-plain {
+  margin: 2rem 0 0 0;
+}
+.dialog .btn-container {
+  align-self: flex-end;
+  margin-top: auto;
+}
+.item-container {
+  max-height: 16rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.item-container::-webkit-scrollbar {
+  display: none;
+}
+.item {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem;
+  color: var(--gray-font);
+  font-weight: 700;
+}
+.item i {
+  font-size: 3.5rem;
+}
+.item .btn {
+  margin: 0 0.5rem;
+  font-size: 2rem;
+  color: inherit;
+}
+.item label {
+  margin: 0 1rem;
+  font-size: 1.8rem;
+}

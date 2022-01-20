@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  --main-bg: #ffffff;
+  --gray-bg: rgba(240, 240, 240, 0.3);
+  --light-font: #fffffff8;
+  --dark-font: #000000;
+  --gray-font: #00000095;
+  --purple-font: #5a03d3;
+  --purple-hover: #6200ee10;
+  --gray-hover: #00000010;
+  --card-shadow: 0 0 5px 2px #c7c6c68e;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+.container-center {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.btn-container {
+  display: flex;
+}
+.btn-plain {
+  font-size: 1.4rem;
+  margin: 0 0.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--purple-font);
+}
+.gray-hover:hover {
+  background-color: var(--gray-hover);
+  transition: 250ms;
+}
+.purple-hover:hover {
+  background-color: var(--purple-hover);
+  transition: 250ms;
+}
+@media screen and (max-width: 800px) {
+  :root {
+    font-size: 65%;
+  }
+  .tab {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  :root {
+    font-size: 55%;
+  }
+  .tab {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  :root {
+    font-size: 40%;
+  }
+  .tab {
+    width: 90%;
+  }
+}

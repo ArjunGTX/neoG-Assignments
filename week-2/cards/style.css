@@ -1,0 +1,97 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+  height: max-content;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  word-wrap: break-word;
+  cursor: pointer;
+  margin: 2rem;
+  position: relative;
+}
+.card-cover {
+  width: 100%;
+  height: 20rem;
+  background-image: url("https://picsum.photos/350/300");
+  background-position: center;
+  background-size: cover;
+  color: var(--light-font);
+}
+.card-title-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1.5rem 0 1.5rem;
+}
+.card-title {
+  font-size: 2rem;
+}
+.card-subtitle {
+  color: var(--gray-font);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.card-body {
+  color: var(--gray-font);
+  font-size: 1.4rem;
+  margin: 2rem 1.5rem 1rem 1.5rem;
+}
+.card-bottom {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--main-bg);
+}
+.icon-container {
+  display: flex;
+}
+.icon-container i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  color: var(--gray-font);
+  margin: 0.5rem;
+  border-radius: 50%;
+  font-size: 1.4rem;
+}
+.text-over-media .card-title-container {
+  position: absolute;
+  color: var(--light-font);
+  top: 38%;
+}
+.text-over-media .card-subtitle {
+  color: var(--light-font);
+}
+.with-header .card-title-container {
+  order: -1;
+  margin-bottom: 10px;
+}
+.only-buttons .icon-container {
+  display: none;
+}
+.only-icons .btn-container {
+  display: none;
+}
+.only-icons .card-bottom {
+  justify-content: flex-end;
+}
+.horizontal-image-text.card {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.horizontal-image-text .card-cover {
+  width: 25%;
+  height: auto;
+  border-top-right-radius: 0.5rem;
+}
+.horizontal-image-text .card-title-container {
+  width: 50%;
+}
+.horizontal-image-text .card-body {
+  display: none;
+}
