@@ -19,6 +19,7 @@
   --purple-hover: #6200ee10;
   --gray-hover: #00000010;
   --card-shadow: 0 0 5px 2px #c7c6c68e;
+  --dark-gray: #333333ef;
 }
 body {
   display: flex;
