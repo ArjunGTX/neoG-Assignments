@@ -52,6 +52,7 @@ body {
   background-color: transparent;
   cursor: pointer;
   font-family: inherit;
+  font-weight: 700;
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }
@@ -61,7 +62,6 @@ body {
 .btn-plain {
   font-size: 1.4rem;
   margin: 0 0.6rem;
-  font-weight: 700;
   letter-spacing: 1px;
   color: var(--purple-font);
 }
@@ -84,6 +84,21 @@ body {
   font-family: "Nunito", sans-serif;
   color: var(--gray-font);
   text-align: center;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-fill {
+  background-color: var(--purple-font);
+  color: var(--light-font);
+}
+.bg-dark {
+  background-color: var(--dark-font);
+}
+.hide {
+  display: none;
 }
 @media screen and (max-width: 800px) {
   :root {

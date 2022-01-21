@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css assignment Badge</title>
+    <link rel="stylesheet" href="../defaults.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-center">
+        <h2>Badges</h2>
+        <div class="badge-container">
+          <p class="badge-text">Text with a badge</p>
+          <div class="badge badge-small center"><p>4</p></div>
+        </div>
+        <div class="badge-container">
+          <p class="badge-text">Text with large badge</p>
+          <div class="badge badge-large center"><p>1</p></div>
+        </div>
+        <div class="badge-container">
+          <p class="badge-text">Button with a badge on the left</p>
+          <button class="btn btn-fill">
+            Action
+            <div class="badge badge-left badge-small bg-red center">
+              <p>8</p>
+            </div>
+          </button>
+        </div>
+        <div class="badge-container">
+          <p class="badge-text">Button toggles badge visibility</p>
+          <button class="btn btn-fill btn-hide bg-dark">
+            Hide
+            <div class="badge badge-small center"><p>7</p></div>
+          </button>
+        </div>
+
+        <div class="badge-container">
+          <p class="badge-text">Icon with a badge</p>
+          <i class="fas fa-home"
+            ><div class="badge badge-small center"><p>15</p></div></i
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
