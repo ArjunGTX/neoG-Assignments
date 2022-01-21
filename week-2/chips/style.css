@@ -1,0 +1,38 @@
+.container-chip {
+  display: flex;
+  max-width: 40rem;
+  flex-wrap: wrap;
+}
+.chip {
+  padding: 1rem 2rem;
+  color: var(--gray-font);
+  background-color: var(--gray-medium);
+  margin: 5px;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+}
+.bg-primary {
+  background-color: var(--purple-font);
+  color: var(--light-font);
+}
+.bg-primary:hover {
+  background-color: var(--purple-dark);
+}
+.basic-chip i,
+.stacked-chip i,
+.hide-form {
+  display: none;
+}
+.stacked-chip .container-chip {
+  flex-direction: column;
+}
+.input-chip {
+  border-bottom: 2px solid var(--purple-font);
+}
+.input-chip i {
+  margin-left: 5px;
+  cursor: pointer;
+}
+.input:focus {
+  outline: none;
+}

@@ -9,10 +9,13 @@
   font-size: 62.5%;
   --main-bg: #ffffff;
   --gray-bg: rgba(240, 240, 240, 0.3);
+  --gray-medium: rgba(220, 220, 220, 0.9);
   --light-font: #fffffff8;
   --dark-font: #000000;
   --gray-font: #00000095;
+  --gray-font-medium: #00000050;
   --purple-font: #5a03d3;
+  --purple-dark: #5a03c2;
   --purple-hover: #6200ee10;
   --gray-hover: #00000010;
   --card-shadow: 0 0 5px 2px #c7c6c68e;
@@ -34,9 +37,14 @@ body {
   width: 100%;
   min-height: 20rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+}
+.container-center > h2 {
+  font-size: 2rem;
+  margin: 2rem;
 }
 .btn {
   border: none;
@@ -63,6 +71,18 @@ body {
 .purple-hover:hover {
   background-color: var(--purple-hover);
   transition: 250ms;
+}
+.dark-gray-hover:hover {
+  background-color: var(--gray-font-medium);
+  transition: 250ms;
+}
+.input {
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  color: var(--gray-font);
+  text-align: center;
 }
 @media screen and (max-width: 800px) {
   :root {
