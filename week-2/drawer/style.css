@@ -1,0 +1,67 @@
+.container-drawer {
+  margin: 2rem;
+  border: 3px inset var(--purple-font);
+  max-width: 80rem;
+  max-height: 40rem;
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+}
+.drawer {
+  padding: 1.5rem;
+  min-width: 22rem;
+  box-shadow: var(--card-shadow);
+  overflow-y: auto;
+  transition: 250ms;
+  background-color: var(--main-bg);
+  min-height: 100%;
+}
+.drawer-header {
+  position: sticky;
+  top: 0;
+  padding-bottom: 1rem;
+  background-color: var(--main-bg);
+}
+.drawer-header h3 {
+  font-size: 2.2rem;
+}
+.drawer-header p {
+  font-size: 1.2rem;
+  color: var(--gray-font-medium);
+}
+.drawer-item {
+  margin: 1rem;
+  min-width: 12rem;
+  text-align: left;
+  color: var(--dark-font);
+}
+.drawer-item:focus {
+  background-color: var(--purple-hover);
+  color: var(--purple-font);
+}
+.drawer-item i {
+  margin-right: 1.5rem;
+}
+.nested-items {
+  margin-left: 2rem;
+  overflow-y: hidden;
+  height: 0;
+}
+.show-items {
+  height: auto;
+}
+main {
+  overflow-y: scroll;
+  max-height: 100%;
+  flex-grow: 1;
+}
+.hide-menu {
+  display: none;
+}
+.drawer-modal {
+  position: absolute;
+}
+.blur-main {
+  background-color: var(--gray-font-medium);
+  overflow-y: hidden;
+}
