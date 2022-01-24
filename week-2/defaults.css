@@ -103,6 +103,14 @@ body {
 ul {
   list-style: none;
 }
+.navbar li {
+  display: inline-block;
+  margin: 1rem 0;
+}
+.navbar a {
+  text-decoration: none;
+  font-size: 2rem;
+}
 @media screen and (max-width: 800px) {
   :root {
     font-size: 65%;
